@@ -1,0 +1,48 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-accent: #20c997;
+  --color-brand-accent-hover: #18a27c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-sourcesanspro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Using CSS variables for brand colors */
+.brand-accent {
+  color: var(--color-brand-accent);
+}
+
+.bg-brand-accent {
+  background-color: var(--color-brand-accent);
+}
+
+.border-brand-accent {
+  border-color: var(--color-brand-accent);
+}
+
+.cta-gradient {
+  background: linear-gradient(45deg, var(--color-brand-accent), #0D6EFD);
+}
